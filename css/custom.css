@@ -1,5 +1,6 @@
 header .header-content .header-content-inner p {
     margin-bottom: 0px;
+    color: #fff;
 }
 
 @media(min-width:768px) {
