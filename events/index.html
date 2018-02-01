@@ -9,7 +9,7 @@
 <meta name="generator" content="Hugo 0.19" />
 <title>
         
-                Joint Insights
+                Events
         
 </title>
 <!-- Favicon -->
@@ -77,7 +77,6 @@
     <!-- /.container-fluid -->
 </nav>
 
-
         <!-- HEADER -->
 <header>
     <div class="header-content">
@@ -89,65 +88,159 @@
     </div>
 </header>
 
-        <!-- ABOUT -->
-<section class="bg-primary" id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Nice to meet you</h2>
-                <hr class="light">
-                <p class="text-faded">From increasing knowledge to applying it better, Joint Insights is here to help.</p>
-                <a href="about" class="btn btn-default btn-xl">Who is Joint Insights?</a>
-            </div>
-        </div>
-    </div>
-</section>
+        
+        <!-- Standalone page -->
+<section id="divider"></section>
+<section id="standalone-page">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+            
+            <h1 class="section-heading">
+                Events
+            </h1>
+            <hr class="dark">
+            <h3 class="section-subheading">
+                
+<h2>Upcoming Events!</h2>
+<div id="events"></div>
 
-        <!-- SERVICES -->
-<section id="services">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">At your service</h2>
-                <hr class="primary">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            
-            <div class="col-lg-6 col-md-6 col-sm-6 text-center">
-                <div class="service-box">
-                    
-                    <i class="no-decoration fa fa-4x fa-graduation-cap wow text-primary"></i>
-                    
-                    <h3>Training</h3>
-                    <p class="text-muted">Get everyone on the same page and up to speed with hands-on training.</p>
-                </div>
-            </div>
-            
-            <div class="col-lg-6 col-md-6 col-sm-6 text-center">
-                <div class="service-box">
-                    
-                    <i class="no-decoration fa fa-4x fa-comments-o wow text-primary"></i>
-                    
-                    <h3>Coaching</h3>
-                    <p class="text-muted">Take your skills and your team to the next level through coaching.</p>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
+<script type="text/javascript">
+(function(funcName, baseObj) {
+    
+    
+    
+    funcName = funcName || "docReady";
+    baseObj = baseObj || window;
+    var readyList = [];
+    var readyFired = false;
+    var readyEventHandlersInstalled = false;
 
-        <section class="no-padding" id="portfolio">
-    <div class="container-fluid">
-        <div class="row no-gutter">
+    
+    
+    function ready() {
+        if (!readyFired) {
+            
+            readyFired = true;
+            for (var i = 0; i < readyList.length; i++) {
+                
+                
+                
+                
+                
+                
+                readyList[i].fn.call(window, readyList[i].ctx);
+            }
+            
+            readyList = [];
+        }
+    }
+
+    function readyStateChange() {
+        if ( document.readyState === "complete" ) {
+            ready();
+        }
+    }
+
+    
+    
+    
+    
+    baseObj[funcName] = function(callback, context) {
+        if (typeof callback !== "function") {
+            throw new TypeError("callback for docReady(fn) must be a function");
+        }
+        
+        
+        if (readyFired) {
+            setTimeout(function() {callback(context);}, 1);
+            return;
+        } else {
+            
+            readyList.push({fn: callback, ctx: context});
+        }
+        
+        if (document.readyState === "complete") {
+            setTimeout(ready, 1);
+        } else if (!readyEventHandlersInstalled) {
+            
+            if (document.addEventListener) {
+                
+                document.addEventListener("DOMContentLoaded", ready, false);
+                
+                window.addEventListener("load", ready, false);
+            } else {
+                
+                document.attachEvent("onreadystatechange", readyStateChange);
+                window.attachEvent("onload", ready);
+            }
+            readyEventHandlersInstalled = true;
+        }
+    }
+})("docReady", window);
+
+	docReady(function() {
+		
+		
+		var token = 'Z77OMJHH5K5OQJMDUILF';
+		
+		var organizer = '10658682130';
+
+		var $events = $("#events");
+		
+		$events.html("<i>Loading events, please stand by...</i>");
+		$.get('https://www.eventbriteapi.com/v3/events/search/?token='+token+'&organizer.id='+organizer+'&expand=venue,ticket_classes', function(res) {
+			if(res.events.length) {			
+				$events.html("");		
+				var sortedEvents = res.events.sort(function(a,b) {
+					var aDate = new Date(a.start.utc);
+					var bDate = new Date(b.start.utc);
+					return aDate > bDate;
+				});
+				for(var i=0;i<sortedEvents.length;i++) {
+					var s = "";
+					var event = sortedEvents[i];
+
+					var eventStart = moment(event.start.local).format('M/D/YYYY h:mm A');
+                    var eventEnd = moment(event.end.local).format('M/D/YYYY h:mm A');
+
+					console.dir(event);
+
+					s += "<div class='eventListing'>";
+					s += "<h2><a href='" + event.url + "'>" + event.name.text + "</a></h2>";
+					s += "<p><b>Location: " + event.venue.address.localized_address_display + "</b><br/>";
+					s += "<b>Date/Time: " + eventStart + " to " + eventEnd + "</b></p>";
+
+					var lowestCost = event.ticket_classes.sort(function(a,b) {
+						return a.cost.value > b.cost.value;
+					})[0].cost.display;
+					s += "<p>Starting at: " + lowestCost + "</p>";
+					
+					
+					s += "</div>";
+					$events.append(s);
+
+					
+					
+					
+				}					
+			} else {
+				$events.html("<p>Sorry, there are no upcoming events.</p>");
+			}
+		});		
+	});
+</script>
+
+
+            </h3>
+        </div>
+        <div class="text-center">
             
         </div>
     </div>
+</div>
 </section>
-
+        
         <!-- Contact Section -->
 <section id="contact">
     <div class="container">
@@ -217,9 +310,6 @@ ga('send', 'pageview');
 </script>
 
 
-        <!-- Portfolio Modals -->
-
-
         <!-- jQuery -->
 <script src="http://jointinsights.com/js/jquery.js"></script>
 <!-- Bootstrap Core JavaScript -->
@@ -232,5 +322,7 @@ ga('send', 'pageview');
 <!-- Custom Theme JavaScript -->
 <script src="http://jointinsights.com/js/creative.js"></script>
 
+        <!-- Custom JS - Template Agnostic -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js"></script>
     </body>
 </html>

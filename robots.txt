@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /CNAME
+Disallow: /img/
+Disallow: /fonts/
+Disallow: /font-awesome/fonts/

@@ -2,14 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://jointinsights.com/</loc>
+    <loc>http://jointinsights.com/about/</loc>
     <lastmod>2016-05-02T21:45:42-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://jointinsights.com/about/</loc>
+    <loc>http://jointinsights.com/events/</loc>
     <lastmod>2016-05-02T21:45:42-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jointinsights.com/</loc>
+    <lastmod>2016-05-02T21:45:42-05:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

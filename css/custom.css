@@ -23,11 +23,6 @@ p {
   text-decoration: none;
 }
 
-.article-meta .article-date,
-.article-meta .article-category {
-  color: #9a9ea3;
-}
-
 .article-category {
   line-height: 1em;
 }

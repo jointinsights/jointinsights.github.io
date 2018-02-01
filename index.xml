@@ -2,10 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Joint Insights</title>
-    <link>http://jointinsights.com/</link>
+    <link>http://jointinsights.com/index.xml</link>
     <description>Recent content on Joint Insights</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Joint Insights, All rights reserved.</copyright>
     <lastBuildDate>Mon, 02 May 2016 21:45:42 -0500</lastBuildDate>
     <atom:link href="http://jointinsights.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,35 +18,174 @@
       <guid>http://jointinsights.com/about/</guid>
       <description>
 
-&lt;h1 id=&#34;why:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Why?&lt;/h1&gt;
+&lt;h1 id=&#34;why&#34;&gt;Why?&lt;/h1&gt;
 
 &lt;p&gt;It is the mission of Joint Insights to help people leverage different perspectives and new approaches to make sense of their situation and solve the challenges they are facing.&lt;/p&gt;
 
-&lt;h1 id=&#34;how:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;How?&lt;/h1&gt;
+&lt;h1 id=&#34;how&#34;&gt;How?&lt;/h1&gt;
 
-&lt;h3 id=&#34;focus-on-next-level-problems:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Focus on next-level problems&lt;/h3&gt;
+&lt;h3 id=&#34;focus-on-next-level-problems&#34;&gt;Focus on next-level problems&lt;/h3&gt;
 
 &lt;p&gt;Once you solve one problem, you expose the next one.  Embrace that, and constantly seek to find out what the root issue is.&lt;/p&gt;
 
-&lt;h3 id=&#34;write-the-dictionary:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Write the dictionary&lt;/h3&gt;
+&lt;h3 id=&#34;write-the-dictionary&#34;&gt;Write the dictionary&lt;/h3&gt;
 
 &lt;p&gt;Always baseline understanding.  Train and explain as necessary before applying a concept.&lt;/p&gt;
 
-&lt;h3 id=&#34;work-on-problems-not-symptoms:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Work on problems, not symptoms&lt;/h3&gt;
+&lt;h3 id=&#34;work-on-problems-not-symptoms&#34;&gt;Work on problems, not symptoms&lt;/h3&gt;
 
 &lt;p&gt;People are often likely discussing symptoms.  If that&amp;rsquo;s all we work on, the problem doesn&amp;rsquo;t go away.&lt;/p&gt;
 
-&lt;h3 id=&#34;nourish-transparency:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Nourish transparency&lt;/h3&gt;
+&lt;h3 id=&#34;nourish-transparency&#34;&gt;Nourish transparency&lt;/h3&gt;
 
 &lt;p&gt;The brutal truth puts us on the same page, and is most effective on moving us together in the same direction.&lt;/p&gt;
 
-&lt;h1 id=&#34;who:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Who?&lt;/h1&gt;
+&lt;h1 id=&#34;who&#34;&gt;Who?&lt;/h1&gt;
 
 &lt;p&gt;Joint Insights is owned and operated by Rich Visotcky.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://jointinsights.com/img/profile.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Rich is a seasoned agile trainer and coach, bringing years of experience in helping hundreds of people learn agile concepts and put them into practice in their daily work and lives.  Rich loves to help connect people with the principles behind leaner, agile processes and practices so they build elastic skills and can adapt their approach as the problems they are faced with change.  He has a background in software development, having put to practice what he preaches.  Constantly at the intersection between those who want something done and those who want to do good work, Rich helps to bridge the gaps in communications between all.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Events</title>
+      <link>http://jointinsights.com/events/</link>
+      <pubDate>Mon, 02 May 2016 21:45:42 -0500</pubDate>
+      
+      <guid>http://jointinsights.com/events/</guid>
+      <description>
+&lt;h2&gt;Upcoming Events!&lt;/h2&gt;
+&lt;div id=&#34;events&#34;&gt;&lt;/div&gt;
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+(function(funcName, baseObj) {
+    
+    
+    
+    funcName = funcName || &#34;docReady&#34;;
+    baseObj = baseObj || window;
+    var readyList = [];
+    var readyFired = false;
+    var readyEventHandlersInstalled = false;
+
+    
+    
+    function ready() {
+        if (!readyFired) {
+            
+            readyFired = true;
+            for (var i = 0; i &lt; readyList.length; i++) {
+                
+                
+                
+                
+                
+                
+                readyList[i].fn.call(window, readyList[i].ctx);
+            }
+            
+            readyList = [];
+        }
+    }
+
+    function readyStateChange() {
+        if ( document.readyState === &#34;complete&#34; ) {
+            ready();
+        }
+    }
+
+    
+    
+    
+    
+    baseObj[funcName] = function(callback, context) {
+        if (typeof callback !== &#34;function&#34;) {
+            throw new TypeError(&#34;callback for docReady(fn) must be a function&#34;);
+        }
+        
+        
+        if (readyFired) {
+            setTimeout(function() {callback(context);}, 1);
+            return;
+        } else {
+            
+            readyList.push({fn: callback, ctx: context});
+        }
+        
+        if (document.readyState === &#34;complete&#34;) {
+            setTimeout(ready, 1);
+        } else if (!readyEventHandlersInstalled) {
+            
+            if (document.addEventListener) {
+                
+                document.addEventListener(&#34;DOMContentLoaded&#34;, ready, false);
+                
+                window.addEventListener(&#34;load&#34;, ready, false);
+            } else {
+                
+                document.attachEvent(&#34;onreadystatechange&#34;, readyStateChange);
+                window.attachEvent(&#34;onload&#34;, ready);
+            }
+            readyEventHandlersInstalled = true;
+        }
+    }
+})(&#34;docReady&#34;, window);
+
+	docReady(function() {
+		
+		
+		var token = &#39;Z77OMJHH5K5OQJMDUILF&#39;;
+		
+		var organizer = &#39;10658682130&#39;;
+
+		var $events = $(&#34;#events&#34;);
+		
+		$events.html(&#34;&lt;i&gt;Loading events, please stand by...&lt;/i&gt;&#34;);
+		$.get(&#39;https://www.eventbriteapi.com/v3/events/search/?token=&#39;+token+&#39;&amp;organizer.id=&#39;+organizer+&#39;&amp;expand=venue,ticket_classes&#39;, function(res) {
+			if(res.events.length) {			
+				$events.html(&#34;&#34;);		
+				var sortedEvents = res.events.sort(function(a,b) {
+					var aDate = new Date(a.start.utc);
+					var bDate = new Date(b.start.utc);
+					return aDate &gt; bDate;
+				});
+				for(var i=0;i&lt;sortedEvents.length;i++) {
+					var s = &#34;&#34;;
+					var event = sortedEvents[i];
+
+					var eventStart = moment(event.start.local).format(&#39;M/D/YYYY h:mm A&#39;);
+                    var eventEnd = moment(event.end.local).format(&#39;M/D/YYYY h:mm A&#39;);
+
+					console.dir(event);
+
+					s += &#34;&lt;div class=&#39;eventListing&#39;&gt;&#34;;
+					s += &#34;&lt;h2&gt;&lt;a href=&#39;&#34; + event.url + &#34;&#39;&gt;&#34; + event.name.text + &#34;&lt;/a&gt;&lt;/h2&gt;&#34;;
+					s += &#34;&lt;p&gt;&lt;b&gt;Location: &#34; + event.venue.address.localized_address_display + &#34;&lt;/b&gt;&lt;br/&gt;&#34;;
+					s += &#34;&lt;b&gt;Date/Time: &#34; + eventStart + &#34; to &#34; + eventEnd + &#34;&lt;/b&gt;&lt;/p&gt;&#34;;
+
+					var lowestCost = event.ticket_classes.sort(function(a,b) {
+						return a.cost.value &gt; b.cost.value;
+					})[0].cost.display;
+					s += &#34;&lt;p&gt;Starting at: &#34; + lowestCost + &#34;&lt;/p&gt;&#34;;
+					
+					
+					s += &#34;&lt;/div&gt;&#34;;
+					$events.append(s);
+
+					
+					
+					
+				}					
+			} else {
+				$events.html(&#34;&lt;p&gt;Sorry, there are no upcoming events.&lt;/p&gt;&#34;);
+			}
+		});		
+	});
+&lt;/script&gt;
+
 </description>
     </item>
     
