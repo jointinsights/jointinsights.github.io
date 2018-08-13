@@ -194,6 +194,11 @@ a.article-title-link {
   margin-top: 0.5em;
 }
 
+header {
+  background-image: url(../img/header.png);
+  background-color: #4d365e;
+}
+
 header .header-content .header-content-inner p {
     margin-bottom: 0px;
     color: #fff;
@@ -206,9 +211,9 @@ header .header-content .header-content-inner p {
 }
 
 button.btn-flip:hover {
-    border-color: #f05f40;
+    border-color: #f05236;
     color: #fff;
-    background-color: #f05f40;
+    background-color: #f05236;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -217,7 +222,7 @@ button.btn-flip:hover {
 a.no-decoration { text-decoration: none; }
 
 section#divider {
-    background-color: #f05f40;
+    background-color: #f05236;
     padding: 0px;
     height: 20px;
 }
@@ -319,4 +324,34 @@ section#standalone-page p {
 #footer-info {
   line-height: 1.6em;
   font-size: 0.85em;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.bg-primary {
+  background-color: #f05236;
+}
+
+.navbar-default {
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+  text-transform: uppercase;
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.btn {
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+hr.blue
+{
+  border-color: #3bbeb4;
 }

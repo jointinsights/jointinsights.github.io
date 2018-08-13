@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Joint Insights</title>
-    <link>http://jointinsights.com/index.xml</link>
+    <link>/jointinsights.com/index.xml</link>
     <description>Recent content on Joint Insights</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Joint Insights, All rights reserved.</copyright>
     <lastBuildDate>Mon, 02 May 2016 21:45:42 -0500</lastBuildDate>
-    <atom:link href="http://jointinsights.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/jointinsights.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About Joint Insights</title>
-      <link>http://jointinsights.com/about/</link>
+      <link>/jointinsights.com/about/</link>
       <pubDate>Mon, 02 May 2016 21:45:42 -0500</pubDate>
       
-      <guid>http://jointinsights.com/about/</guid>
+      <guid>/jointinsights.com/about/</guid>
       <description>
 
 &lt;h1 id=&#34;why&#34;&gt;Why?&lt;/h1&gt;
@@ -44,18 +44,21 @@
 
 &lt;p&gt;Joint Insights is owned and operated by Rich Visotcky.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://jointinsights.com/img/profile.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;jointinsights.com/img/profile.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Rich is a seasoned agile trainer and coach, bringing years of experience in helping hundreds of people learn agile concepts and put them into practice in their daily work and lives.  Rich loves to help connect people with the principles behind leaner, agile processes and practices so they build elastic skills and can adapt their approach as the problems they are faced with change.  He has a background in software development, having put to practice what he preaches.  Constantly at the intersection between those who want something done and those who want to do good work, Rich helps to bridge the gaps in communications between all.&lt;/p&gt;
+&lt;p&gt;About Rich Visotcky:
+It is my mission to help people leverage different perspectives and new approaches to connect with what is truly important in their situation and solve the challenges they are facing. I love to connect people with the principles behind leaner, agile processes and practices so they build elastic skills and adaptable approaches to deal with evolving challenges.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m a seasoned agile trainer and coach, Professional Scrum Trainer with Scrum.org, one of two stewards for the Professional Scrum Foundations course, and Management 3.0 facilitator bringing years of experience in helping hundreds of people learn agile concepts and put them into practice in their daily work and lives.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Events</title>
-      <link>http://jointinsights.com/events/</link>
+      <link>/jointinsights.com/events/</link>
       <pubDate>Mon, 02 May 2016 21:45:42 -0500</pubDate>
       
-      <guid>http://jointinsights.com/events/</guid>
+      <guid>/jointinsights.com/events/</guid>
       <description>
 &lt;h2&gt;Upcoming Events!&lt;/h2&gt;
 &lt;div id=&#34;events&#34;&gt;&lt;/div&gt;
