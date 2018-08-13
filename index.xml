@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Joint Insights</title>
-    <link>//jointinsights.com/index.xml</link>
+    <link>https://jointinsights.com/index.xml</link>
     <description>Recent content on Joint Insights</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Joint Insights, All rights reserved.</copyright>
     <lastBuildDate>Mon, 02 May 2016 21:45:42 -0500</lastBuildDate>
-    <atom:link href="//jointinsights.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jointinsights.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About Joint Insights</title>
-      <link>//jointinsights.com/about/</link>
+      <link>https://jointinsights.com/about/</link>
       <pubDate>Mon, 02 May 2016 21:45:42 -0500</pubDate>
       
-      <guid>//jointinsights.com/about/</guid>
+      <guid>https://jointinsights.com/about/</guid>
       <description>
 
 &lt;h1 id=&#34;why&#34;&gt;Why?&lt;/h1&gt;
@@ -44,7 +44,7 @@
 
 &lt;p&gt;Joint Insights is owned and operated by Rich Visotcky.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;//jointinsights.com/img/profile.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jointinsights.com/img/profile.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;About Rich Visotcky:
 It is my mission to help people leverage different perspectives and new approaches to connect with what is truly important in their situation and solve the challenges they are facing. I love to connect people with the principles behind leaner, agile processes and practices so they build elastic skills and adaptable approaches to deal with evolving challenges.&lt;/p&gt;
@@ -55,10 +55,10 @@ It is my mission to help people leverage different perspectives and new approach
     
     <item>
       <title>Events</title>
-      <link>//jointinsights.com/events/</link>
+      <link>https://jointinsights.com/events/</link>
       <pubDate>Mon, 02 May 2016 21:45:42 -0500</pubDate>
       
-      <guid>//jointinsights.com/events/</guid>
+      <guid>https://jointinsights.com/events/</guid>
       <description>
 &lt;h2&gt;Upcoming Events!&lt;/h2&gt;
 &lt;div id=&#34;events&#34;&gt;&lt;/div&gt;
